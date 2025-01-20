@@ -64,7 +64,7 @@ class Image(Store):
         :param count: Number of colors to return.
         :param group: Color group size.
         """
-        counts = self.get_colur_counts(group)
+        counts = self.get_color_counts(group)
         return sorted(counts, key=counts.get, reverse=True)[:count]
 
     def get_color_counts(self, group: int = 1) -> dict[RGB, int]:
